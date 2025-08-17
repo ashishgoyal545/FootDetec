@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Foot Size Detection</title>
+    <title>Upload Image</title>
 </head>
 <body>
-    <h1>Upload Foot Image</h1>
+    <h1>Upload an image to detect feet</h1>
     <form method="post" enctype="multipart/form-data">
         <input type="file" name="file">
         <input type="submit" value="Upload">
     </form>
-    {% if message %}
-        <p>{{ message }}</p>
-    {% endif %}
-    {% if foot_size %}
-        <h2>Foot Size:</h2>
-        <p>{{ foot_size }}</p>
-    {% endif %}
 </body>
 </html>
